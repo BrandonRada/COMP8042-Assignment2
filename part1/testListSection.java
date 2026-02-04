@@ -5,7 +5,7 @@ public class testListSection {
         PermutationGenerator pg = new PermutationGenerator(testArray);
 
         Integer[] smallestLarger = pg.smallestLargerNumbers();
-        Integer[] largestSmaller = pg.largestSmallestNumbers();
+        Integer[] largestSmaller = pg.largestSmallerNumbers();
 
         System.out.println("\nInput: ");
         printArray(testArray);
@@ -20,6 +20,15 @@ public class testListSection {
         System.out.println("\n==== Now to test Shuffling ====");
         pg.shuffle();
         printArray(pg.getInputList());
+
+        System.out.println("\n==== Now to test after shuffling! ====");
+
+        System.out.println("\nSmallest Larger Numbers: ");
+        printArray(smallestLarger);
+
+        System.out.println("\nLargest Smaller Numbers: ");
+        printArray(largestSmaller);
+
 
     }
 
